@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FilmCatalogue</string>
+    <string name="description">Image Movie</string>
+    <string name="title_origen">ORIGEN</string>
+    <string name="title_gravity">GRAVITY</string>
+    <string name="title_guerra">GUERRA</string>
+    <string name="title_juguete">JUGUETE</string>
+    <string name="title_jumanji">JUMANJI</string>
+    <string name="title_rey">REY LEON</string>
+</resources>

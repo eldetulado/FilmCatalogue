@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oso.filmcatalogue.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/description"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/origen" />
+
+    <Button
+        android:id="@+id/btnOrigen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_origen"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuerra"
+        app:layout_constraintEnd_toStartOf="@+id/btnGravity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGravity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/title_gravity"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnOrigen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOrigen" />
+
+    <Button
+        android:id="@+id/btnGuerra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_guerra"
+        app:layout_constraintBottom_toTopOf="@+id/btnJumanji"
+        app:layout_constraintEnd_toStartOf="@+id/btnGravity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnOrigen"
+        app:layout_constraintTop_toBottomOf="@+id/btnOrigen" />
+
+
+    <Button
+        android:id="@+id/btnJuguete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_juguete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnGuerra"
+        app:layout_constraintEnd_toEndOf="@+id/btnGravity"
+        app:layout_constraintStart_toStartOf="@+id/btnGravity" />
+
+    <Button
+        android:id="@+id/btnJumanji"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_jumanji"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnJuguete"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnGuerra"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuerra"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <Button
+        android:id="@+id/btnRey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_rey"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnJumanji"
+        app:layout_constraintEnd_toEndOf="@+id/btnJuguete"
+        app:layout_constraintStart_toStartOf="@+id/btnJuguete" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>
